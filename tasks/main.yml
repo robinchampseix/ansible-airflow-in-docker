@@ -7,6 +7,7 @@
     state: directory
     recurse: true
   with_items:
+    - "{{ airflow_script_location }}"
     - "{{ airflow_data_input_location }}"
     - "{{ airflow_data_output_success_location }}"
     - "{{ airflow_data_output_failed_location }}"

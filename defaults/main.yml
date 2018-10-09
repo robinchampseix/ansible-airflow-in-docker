@@ -1,5 +1,5 @@
 ---
-# defaults file for .
+
 airflow_container_name: "airflow"
 
 airflow_root_location: "/opt/docker-data/{{ airflow_container_name }}"
