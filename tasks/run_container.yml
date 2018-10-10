@@ -16,4 +16,4 @@
       - "{{ airflow_data_input_location }}:/home/data_test"
       - "{{ airflow_data_output_success_location }}:/home/write_complete"
       - "{{ airflow_data_output_failed_location }}:/home/problem_files"
-      - "{{ airflow_requirements_location }}/requirements.txt:/requirements.txt"
+      - "{{ airflow_requirements_location }}/requirements.txt:/"
