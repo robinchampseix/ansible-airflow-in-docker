@@ -12,7 +12,7 @@
     networks: "{{ airflow_docker_networks }}"
     restart_policy: "{{ airflow_container_restart_policy }}"
     volumes:
-      - "{{ airflow_script_location }}/raw_data_injector.py:{{ airflow_script_location_in_container }}:ro"
+      - "{{ airflow_script_location }}:{{ airflow_script_location_in_container }}:ro"
       - "{{ airflow_data_input_location }}:{{ airflow_data_input_location_in_container }}"
       - "{{ airflow_data_output_success_location }}:{{ airflow_data_output_success_location_in_container }}"
       - "{{ airflow_data_output_failed_location }}:{{ airflow_data_output_failed_location_in_container }}"
