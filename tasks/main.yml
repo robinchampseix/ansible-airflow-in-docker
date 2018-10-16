@@ -4,6 +4,7 @@
   become: true
   file:
     path: "{{ item }}"
+    owner: 1000
     state: directory
     recurse: true
   with_items:
