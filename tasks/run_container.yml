@@ -10,6 +10,7 @@
     state: "{{ airflow_docker_state | default('started') }}"
     restart: "{{ airflow_docker_restart | default(false) | bool }}"
     networks: "{{ airflow_docker_networks }}"
+    ports: "8081:8080"
     restart_policy: "{{ airflow_container_restart_policy }}"
     volumes:
       - "{{ airflow_script_location }}:{{ airflow_script_location_in_container }}:ro"
