@@ -18,6 +18,6 @@
   become: true
   copy:
     content: "{{ requirements_file_content }}"
-    dest: "{{ airflow_requirements_location_in_container }}/requirements.txt"
+    dest: "{{ airflow_requirements_location }}"
 
 - include_tasks: run_container.yml
