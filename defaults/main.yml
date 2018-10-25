@@ -9,6 +9,8 @@ airflow_data_output_success_location: "{{ airflow_root_location }}/data/success"
 airflow_data_output_failed_location: "{{ airflow_root_location }}/data/failed"
 airflow_requirements_location: "{{ airflow_root_location }}/requirements"
 airflow_requirements_file: "{{ airflow_requirements_location }}/requirements.txt"
+airflow_injector_methods_file: "{{ airflow_script_location }}/influxdb_raw_data_injector.py"
+airflow_dag_script_file: "{{ airflow_script_location }}/dag_raw_data_injector.py"
 
 # variables inside container
 airflow_script_location_in_container: "/usr/local/airflow/dags/"
