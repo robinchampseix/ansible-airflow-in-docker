@@ -11,7 +11,7 @@ airflow_requirements_location: "{{ airflow_root_location }}/requirements"
 
 # variables inside container
 airflow_script_location_in_container: "/usr/local/airflow/dags/"
-airflow_data_input_location_in_container: "/usr/local/airflow/data_test/"
+airflow_data_input_location_in_container: "/usr/local/airflow/todo/"
 airflow_data_output_success_location_in_container: "/usr/local/airflow/write_complete/"
 airflow_data_output_failed_location_in_container: "/usr/local/airflow/problem_files/"
 airflow_requirements_location_in_container: "/usr/local/airflow/requirements/"
