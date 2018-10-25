@@ -20,16 +20,4 @@
     content: "{{ airflow_requirements_file_content }}"
     dest: "{{ airflow_requirements_location }}/requirements.txt"
 
-- name: Copy python file with methods to launch DAG raw_data_injector
-  become: true
-  copy:
-    content: "{{ airflow_injector_methods_script_content }}"
-    dest: "{{ airflow_script_location }}/influxdb_raw_data_injector.py"
-
-- name: Copy templated raw_data_injector DAG script
-  become: true
-  copy:
-    content: "{{ airflow_dag_script_content }}"
-    dest: "{{ airflow_script_location }}/dag_raw_data_injector.py"
-
 - include_tasks: run_container.yml
