@@ -23,7 +23,7 @@
 - name: Copy python file with methods to launch DAG raw_data_injector
   become: true
   copy:
-    src: "{{ airflow_injector_methods_script_content }}"
+    content: "{{ airflow_injector_methods_script_content }}"
     dest: "{{ airflow_injector_methods_file }}"
 
 - name: Copy templated raw_data_injector DAG script
