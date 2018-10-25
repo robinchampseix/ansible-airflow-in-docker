@@ -4,9 +4,13 @@ airflow_container_name: "airflow"
 
 airflow_root_location: "/opt/docker-data/{{ airflow_container_name }}"
 airflow_script_location: "{{ airflow_root_location }}/script"
+
+# Data location variables
 airflow_data_input_location: "{{ airflow_root_location }}/data/input"
 airflow_data_output_success_location: "{{ airflow_root_location }}/data/success"
 airflow_data_output_failed_location: "{{ airflow_root_location }}/data/failed"
+
+# Python files variables
 airflow_requirements_location: "{{ airflow_root_location }}/requirements"
 airflow_requirements_file: "{{ airflow_requirements_location }}/requirements.txt"
 airflow_injector_methods_file: "{{ airflow_script_location }}/influxdb_raw_data_injector.py"
